@@ -28,7 +28,7 @@
 .container-hero {
     position: relative; /* Establece un contexto de posicionamiento */
     height: 65vh;
-    
+
 }
 
 .text-hero{
@@ -40,6 +40,7 @@
     padding-right: 3.5rem;
     padding-left: 7.5rem;
     z-index: 2;
+    margin-bottom: 100px;
 }
 
 .title-hero{
@@ -60,6 +61,14 @@
     max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
     width: 350px;
     height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.linea {
+    width: 80%;
+    height: 2px; 
+    background-color: var(--color-2);
+    margin: 0 auto;
+    z-index: 2;
 }
 
 /*.imagen-hero{
@@ -145,7 +154,6 @@
     flex-direction: column;
     gap: 150px;
     padding:7rem 13rem 3.5rem;
-    background-color: var(--color-1);
 }
 
 .texto-sn{
@@ -376,9 +384,17 @@
     .navbar{
         padding: 3rem 2rem;
     }
+
+    .nav-link{
+        font-size: 4vw;
+    }
+
+    .navbar-nav{
+        gap: 30px;
+    }
     
     .navbar-brand img{
-        width: 150px;
+        width: 100px;
     }
 
     .navbar-collapse{
@@ -393,24 +409,43 @@
         color: var(--color-5);
     }
 
-    .container-hero {
+    .text-hero{
         flex-direction: column;
-        gap: 35px;
+        justify-content: center;
+        gap: 50px;
         padding-right: 0;
         padding-left: 0;
     }
 
-    .imagen-hero{
-       width: auto;
+    .desc-hero{
+        align-items: center;
+        max-width: 250px;
+        gap: 0;
+        margin-right: 0;
     }
 
-    .imagen-hero img{
-        width: 300px;
+    .h2-hero{
+        font-size: 5.5vw;
+        text-align: center;
     }
     
-    .texto-hero {
-        align-items: center;
+    .p-hero{
+        font-size: 4vw;
+        text-align: center;
     }
+    
+    .h1-hero{
+        font-size: 12vw;
+        text-align: center;
+        line-height: 50px;
+    }
+    
+    .img-hero {
+        top: 8%; /* Ajusta la posición vertical */
+        left: 75%; /* Centra horizontalmente el contenedor de la imagen */
+        transform: translate(-50%,50%); /* Ajusta la posición para que esté centrada */
+    }
+    
 
     .titulo{
         text-align: center;
