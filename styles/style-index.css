@@ -40,7 +40,7 @@
     padding-right: 3.5rem;
     padding-left: 7.5rem;
     z-index: 2;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 .title-hero{
@@ -68,39 +68,14 @@
     height: 2px; 
     background-color: var(--color-2);
     margin: 0 auto;
-    z-index: 2;
 }
-
-/*.imagen-hero{
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-  }
-  
-  @keyframes floating {
-    0% {
-      transform: translate(0, 0px);
-    }
-    50% {
-      transform: translate(0, 10px);
-    }
-    100% {
-      transform: translate(0, -0px);
-    }
-}
-
-.imagen-hero img{
-    width: 100%;
-    margin: 0 auto;
-}*/
 
 .desc-hero{
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    max-width: 350px;
     gap: 25px;
-    margin-right: 150px;
+    margin-right: 100px;
 }
 
 .h2-hero{
@@ -111,7 +86,8 @@
 }
 
 .p-hero{
-    font-size: 1.3vw;
+    font-size: 1.4vw;
+    font-weight: 250;
     font-family: var(--font-nunito);
     line-height: 22px;
     color: var(--color-2);
@@ -148,50 +124,161 @@
     background-color: #4cbca7;
 }
 
-/*Sobre Nosostros*/
-.container-sn{
+/*Sobre mi*/
+.container-sm{
     display: flex;
-    flex-direction: column;
-    gap: 150px;
-    padding:7rem 13rem 3.5rem;
-}
-
-.texto-sn{
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 35px;
-    color: var(--color-4);
+    justify-content: center;
+    gap: 100px;
+    padding: 16rem 13rem 8rem;
 }
 
-.titulo-sn{
-    font-size: 4.5vw;
-    font-family: var(--font-orbitron);
-    font-weight: bold;
-    text-align: center;
+.img-sm{
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translate(0, 0px);
+    }
+    50% {
+      transform: translate(0, 10px);
+    }
+    100% {
+      transform: translate(0, -0px);
+    }
 }
 
-.titulo-sn span{
-    color: var(--color-2);
-    font-family: var(--font-orbitron);
+.img-sm img{
+    width: 600px;
+    margin: 0 auto;
 }
 
-.descp-sn{
-    font-size: 1.7vw;
-    font-family: var(--font-jetbrains);
-    text-align: justify;
-}
-
-.link-sn{
-    font-size: 1.3vw ;
+.capatext-sm{
+    min-width: 350px;
     display: flex;
     flex-direction: column;
+    gap: 50px;
+}
+
+.title-sm{
+    display: flex;
     align-items: center;
-    gap: 4px;
+    margin-bottom: 15px;
+}
+
+.ico-titulo-sm{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.h2-sm{
+    margin: 0;
+    font-family: var(--font-cygroyesk);
+    font-weight: bolder;
+}
+
+.descp-sm{
+    font-size: 1.1vw;
+    font-weight: 250;
+    font-family: var(--font-nunito);
+    line-height: 22px;
+    margin: 0;
     color: var(--color-2);
-    font-family: var(--font-orbitron);
+}
+
+.line-sm{
+    width: 100%;
+    height: 2px; 
+    background-color: var(--color-2);
+}
+
+.link-sm{
+    display: flex;
+    gap: 10px;
     text-decoration: none;
+    color: var(--color-1);
+    align-items: center;
+    font-size: 20px;
     font-weight: bold;
+    font-family: var(--font-nunito);
+    margin: 0;
+}
+
+.link-sm {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--color-1);
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--font-nunito);
+    line-height: 0px;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 30px;
+}
+
+.link-sm:hover{
+    transform: translate(1%);
+}
+
+.action-sm{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-copyemail{
+    width: 77%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background-color: var(--color-3);
+    border-radius: 25px;
+}
+
+.input-email{
+    width: 75%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: var(--color-4);
+    font-family: var(--font-nunito);
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.input-email:focus {
+    outline: none;
+}
+
+.c-btn-git{
+    height: 60px;
+}
+
+.btn-git{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--color-1);
+    font-family: var(--font-nunito);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-git:hover{
+    transform: translateY(-5%);
+}
+
+.btn-copy{
+    background-color: transparent;
+    border: none;
 }
 
 /*FORMACIONES*/
