@@ -2,6 +2,9 @@
 
 *{
     font-family: var(--font-poppins);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /*Navbar*/
@@ -179,6 +182,7 @@
     margin: 0;
     font-family: var(--font-cygroyesk);
     font-weight: bolder;
+    color: var(--color-2);
 }
 
 .descp-sm{
@@ -312,7 +316,7 @@
 /*Proyectos*/
 .container-p{
     height: 100vh;
-    padding: 3rem 10rem 45rem;
+    padding: 2rem 10rem 5rem;
 }
 
 .titulo-p{
@@ -326,6 +330,7 @@
 .h2-p{
     font-family: var(--font-cygroyesk);
     font-size:4vw;
+    color: var(--color-2);
 }
 
 .proyectos{
@@ -376,6 +381,7 @@
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 0.5rem;
+    color: var(--color-2);
 }
 
 .parrafo-p strong{
@@ -409,70 +415,119 @@
     background-color: #4cbca7;
 }
 
+/*Formacion*/
+.container-f{
+    height: 100vh;
+    padding: 5rem 10rem 5rem;
+}
+
+.header-f{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.titulo-f{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.h2-f{
+    font-family: var(--font-cygroyesk);
+    font-size: 3vw;
+    color: var(--color-2);
+}
+
+.line-f{
+    height: 2px;
+    width: 70%;
+    background-color: var(--color-2);
+}
+
+.body-f{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.formaciones{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+.formacion{
+    width: 87%;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.flecha-f{
+    width: 25px;
+    padding-top: 5px;
+}
 
 
+.img-f{
+    width: 40%;
+}
 
+.img-f img{
+    width: 100%;
+}
+
+.h3-f{
+    font-family: var(--font-nunito);
+    color: var(--color-2);
+}
+
+.dateplace-f{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ico-f{
+    width: 18px;
+}
+
+.dateplace-f p{
+    margin-bottom: 0;
+    font-family: var(--font-nunito);
+    font-size: 18px;
+    color: var(--color-3);
+}
+
+.descp-f{
+    font-family: var(--font-nunito);
+    font-size: 18px;
+    font-weight: lighter;
+    color: var(--color-3);
+    margin-top: 2.5px;
+    margin-bottom: 20px;
+}
+
+.link-f{
+    text-decoration: none;
+    color: var(--color-1);
+    font-size: 18px;
+    font-weight: 500;
+}
 
 /*Contacto*/
-.contacto{
-    position: relative;
-    overflow: hidden; 
-    background: url('../Imagenes/contacto_backgaond.png');
-    color: var(--color-4);
-    padding: 3.5rem 5.5rem 4rem;
-    z-index: 1;
-}
 
-.titulos-con{
-    width: 100%;
-    position: relative;
-}
-
-.titulo-con{
-    font-size: 4.5vw;
-    font-family: var(--font-orbitron);
-    font-weight: bold;
-    line-height: 60px;
-}
-
-.titulo-con span{
-    color: var(--color-2);
-    font-family: var(--font-orbitron);
-}
-
-.info-contacto{
-    position: relative; 
-    display: flex;
-    flex-direction: column;
-    gap: 540px;
-    margin-top: 200px;
-    align-items: flex-end;
-    margin-right: 100px;
-}
-
-.info-c{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.titulo2-con{
-    margin-bottom: 6px;
-    font-family: var(--font-jetbrains);
-    font-weight: bold;
-    font-size: 23px;
-    color: var(--color-2);
-}
-
-.desc-con{
-    font-weight: 400;
-    font-size: 20px;
-}
-
-.redes{
-    display: flex;
-    gap: 17px;
-}
 
 /*Responsive*/
 @media screen and (max-width: 800px) {
@@ -588,6 +643,52 @@
         align-items: center;
         justify-content: center;
         gap: 70px;
+    }
+
+    .container-f{
+        height: auto;
+        padding: 3rem 2rem 5rem;
+    }
+
+    .header-f{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .h2-f{
+        font-size: 8vw;
+    }
+
+    .line-f {
+        width: 100%;
+    }
+    
+    .img-f{
+        display: none;
+    }
+
+    .body-f{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+    }
+
+    .formaciones {
+        width: 100%;
+    }
+
+    .dateplace-f {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .date-f{
+        color: var(--color-1);
+    }
+
+    .ico-f{
+        display: none;
     }
 
     .contacto {
