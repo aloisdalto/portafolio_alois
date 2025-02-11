@@ -21,7 +21,8 @@
     position: relative;
     color: var(--color-5);
     font-size: 1.1vw;
-    transition: color 0.4s cubic-bezier(0.25, 0.1, 0.25, 1); 
+    transition: color 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+    font-weight: 300;
 }
 
 .nav-link::before {
@@ -934,6 +935,7 @@
     }
 
     .textarea-c{
+        width: 82%;
         font-size: 4vw;
         padding-left: 27px;
         padding-right: 27px;
